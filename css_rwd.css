@@ -1,0 +1,49 @@
+@media (max-width: 992px) {
+  .hero-content .frame ul {
+    justify-content: center;
+  }
+
+  .works {
+    display: none;
+  }
+
+  .works-sm {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-content .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 24px;
+    padding: 0;
+  }
+
+  .header,
+  .hero,
+  .title-lg {
+    display: none;
+  }
+
+  .header-sm,
+  .hero-sm {
+    display: block;
+  }
+  .title-sm {
+    display: flex;
+  }
+
+  .travel .introduction,
+  .app .introduction,
+  .art .introduction {
+    width: 100%;
+  }
+
+  .services,
+  .articles {
+    padding: 80px 0px;
+  }
+}
