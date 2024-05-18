@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,23 +15,23 @@
   </head>
   <body>
     <div class="wrap">
-      <div class="header">
-        <div class="header-content">
+      <header class="header">
+        <div class="header-content container">
           <img
             src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/a0deba953fc5322a513e717e7c24b25fa3d946f8/2024%20web-camp/logo.svg"
             alt="logo"
           />
-          <ul class="nav">
-            <li><a class="click" href="#">首頁</a></li>
+          <ul class="header-nav">
+            <li><a class="active" href="#">首頁</a></li>
             <li><a href="#">作品集</a></li>
             <li><a href="#">服務項目</a></li>
             <li><a href="#">部落格</a></li>
             <li><a href="#">聯絡我</a></li>
           </ul>
         </div>
-      </div>
+      </header>
 
-      <div class="header-sm">
+      <header class="header-sm">
         <div class="header-sm-content">
           <img src="./img/logo.svg" alt="logo" />
           <div class="hamburger">
@@ -48,15 +48,15 @@
         </ul>
         <div class="overlay"></div>
         <!-- 新增遮罩層 -->
-      </div>
+      </header>
 
-      <div class="hero">
+      <section class="hero">
         <div class="hero-content">
-          <div class="frame">
-            <h3>Hi！我是 Noel</h3>
+          <div class="hero-content-box">
+            <h1>Hi！我是 Noel</h1>
             <p>
-              具有 10 年經驗的 <span>資深 UI 設計師</span> 兼
-              <span>前端工程師</span>
+              具有 10 年經驗的 <strong>資深 UI 設計師</strong> 兼
+              <strong>前端工程師</strong>
             </p>
             <p>技術雙修並行，熱衷於優化使用者的網頁體驗</p>
             <p class="en">WEB DEVELOPMENT / BRANDING / UI / UX / APP DESIGN</p>
@@ -68,16 +68,16 @@
           </div>
         </div>
         <img src="./img/hero-lg.png" alt="hero" />
-      </div>
+      </section>
 
-      <div class="hero-sm">
+      <section class="hero-sm">
         <img src="./img/hero-sm.png" alt="hero" />
         <div class="hero-content-sm">
-          <div class="frame-sm">
-            <h3>Hi！我是 Noel</h3>
+          <div class="hero-content-box-sm">
+            <h1>Hi！我是 Noel</h1>
             <p>
-              具有 10 年經驗的<br /><span>資深 UI 設計師</span> 兼<span
-                >前端工程師</span
+              具有 10 年經驗的<br /><strong>資深 UI 設計師</strong> 兼<strong
+                >前端工程師</strong
               >
             </p>
             <p>技術雙修並行，<br />熱衷於優化使用者的網頁體驗</p>
@@ -92,17 +92,17 @@
             </ul>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="works">
+      <section class="works">
         <div class="title-lg">
           <img src="./img/title-deco-left-lg.png" alt="title-deco-left" />
-          <p>作品介紹</p>
+          <h2>作品介紹</h2>
           <img src="./img/title-deco-right-lg.png" alt="title-deco-right" />
         </div>
         <div class="works-content">
           <div class="travel">
-            <div class="travel-content">
+            <div class="travel-content container">
               <img src="./img/homepage-work1.png" alt="homepage-work1" />
               <div class="introduction">
                 <div class="content">
@@ -145,7 +145,7 @@
             </div>
           </div>
           <div class="art">
-            <div class="art-content">
+            <div class="art-content container">
               <img src="./img/homepage-work3.png" alt="homepage-work3" />
               <div class="introduction">
                 <div class="content">
@@ -167,12 +167,12 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="works-sm">
+      <section class="works-sm">
         <div class="title-sm">
           <img src="./img/title-deco-left-sm.png" alt="title-deco-left" />
-          <p>作品介紹</p>
+          <h2>作品介紹</h2>
           <img src="./img/title-deco-right-sm.png" alt="title-deco-right" />
         </div>
         <div class="works-content-sm">
@@ -245,20 +245,20 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="services">
+      <section class="services">
         <div class="title-lg">
           <img src="./img/title-deco-left-lg.png" alt="title-deco-left" />
-          <p>服務項目</p>
+          <h2>服務項目</h2>
           <img src="./img/title-deco-right-lg.png" alt="title-deco-right" />
         </div>
         <div class="title-sm">
           <img src="./img/title-deco-left-sm.png" alt="title-deco-left" />
-          <p>服務項目</p>
+          <h2>服務項目</h2>
           <img src="./img/title-deco-right-sm.png" alt="title-deco-right" />
         </div>
-        <ul class="content">
+        <ul class="content container">
           <li>
             <img src="./img/service-item-visual.svg" alt="平面設計" />
             <h3>平面設計</h3>
@@ -285,20 +285,20 @@
             </a>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="articles">
+      <section class="articles">
         <div class="title-lg">
           <img src="./img/title-deco-left-lg.png" alt="title-deco-left" />
-          <p>精選文章</p>
+          <h2>精選文章</h2>
           <img src="./img/title-deco-right-lg.png" alt="title-deco-right" />
         </div>
         <div class="title-sm">
           <img src="./img/title-deco-left-sm.png" alt="title-deco-left" />
-          <p>精選文章</p>
+          <h2>精選文章</h2>
           <img src="./img/title-deco-right-sm.png" alt="title-deco-right" />
         </div>
-        <ul class="articles-content">
+        <ul class="articles-content container">
           <li>
             <img src="./img/article-image1.png" alt="article1" />
             <h3>Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)</h3>
@@ -331,20 +331,17 @@
           <li></li>
           <li></li>
         </ul>
-      </div>
+      </section>
 
-      <div class="footer-lg">
-        <div class="footer-content">
+      <footer class="footer-lg">
+        <div class="footer-content container">
           <div class="footer-contrat">
-            <img
-              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/a0deba953fc5322a513e717e7c24b25fa3d946f8/2024%20web-camp/logo.svg"
-              alt="logo"
-            />
+            <img src="./img/logo.svg" alt="logo" />
             <h3>若有數位產品設計和開發相關問題</h3>
             <h3>歡迎填寫表單，或直接與我聯絡！</h3>
             <p>service@hexschool.com</p>
           </div>
-          <ul class="link">
+          <ul class="footer-link">
             <li class="black">
               <img src="./img/list.svg" alt="" /><a href="#">填寫表單</a>
             </li>
@@ -358,7 +355,7 @@
             </li>
           </ul>
         </div>
-      </div>
+      </footer>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>

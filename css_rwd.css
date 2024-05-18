@@ -1,8 +1,4 @@
 @media (max-width: 992px) {
-  .hero-content .frame ul {
-    justify-content: center;
-  }
-
   .works {
     display: none;
   }
@@ -10,18 +6,13 @@
   .works-sm {
     display: block;
   }
+
+  .works-sm .title-sm {
+    display: flex;
+  }
 }
 
 @media (max-width: 768px) {
-  .header-content .nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    row-gap: 24px;
-    padding: 0;
-  }
-
   .header,
   .hero,
   .title-lg {
@@ -36,14 +27,50 @@
     display: flex;
   }
 
-  .travel .introduction,
-  .app .introduction,
-  .art .introduction {
-    width: 100%;
-  }
-
   .services,
   .articles {
     padding: 80px 0px;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+  }
+
+  .footer-contrat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-contrat h3 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .footer-contrat p {
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+
+  .footer-lg {
+    background-image: url(./img/footer-bg-sm.png);
+  }
+
+  .footer-link li {
+    padding: 3px 24px 3px 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .articles-content {
+    padding: 0 12px;
+  }
+}
+
+@media (max-width: 330px) {
+  body {
+    display: none;
   }
 }
