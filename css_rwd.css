@@ -1,8 +1,10 @@
 @media (max-width: 992px) {
+  .hero,
   .works {
     display: none;
   }
 
+  .hero-sm,
   .works-sm {
     display: block;
   }
@@ -14,13 +16,11 @@
 
 @media (max-width: 768px) {
   .header,
-  .hero,
   .title-lg {
     display: none;
   }
 
-  .header-sm,
-  .hero-sm {
+  .header-sm {
     display: block;
   }
   .title-sm {

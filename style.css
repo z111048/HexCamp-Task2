@@ -127,14 +127,19 @@ img {
   margin: auto;
   max-width: 1920px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  flex-wrap: wrap-reverse;
   column-gap: 24px;
 }
 
 .hero-content {
-  max-width: 430px;
+  width: 430px;
+  margin-left: 10px;
+}
+
+.hero img {
+  max-width: 1154px;
+  width: 61%;
 }
 
 .hero-content-box h1 {
@@ -175,6 +180,7 @@ img {
 
 .hero-content-box ul li img {
   display: block;
+  width: 56px;
 }
 
 .title-lg {
