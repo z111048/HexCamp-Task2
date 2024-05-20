@@ -34,11 +34,15 @@ img {
   position: relative;
 }
 
-.header-content img {
+.header-content .logo {
   position: absolute;
   top: 28px;
   left: 0;
   z-index: 1;
+}
+
+.hamburger {
+  display: none;
 }
 
 .header-nav {
@@ -123,7 +127,7 @@ img {
   font-weight: 600;
 }
 
-.hero {
+.banner {
   margin: auto;
   max-width: 1920px;
   display: flex;
@@ -132,17 +136,21 @@ img {
   column-gap: 24px;
 }
 
-.hero-content {
-  width: 430px;
+.banner-content {
+  max-width: 430px;
   margin-left: 10px;
 }
 
-.hero img {
+.banner-img-lg {
   max-width: 1154px;
   width: 61%;
 }
 
-.hero-content-box h1 {
+.banner-img-sm {
+  display: none;
+}
+
+.banner-content-box h1 {
   font-size: 40px;
   font-weight: 600;
   line-height: 48px;
@@ -150,7 +158,7 @@ img {
   margin-bottom: 24px;
 }
 
-.hero-content-box p {
+.banner-content-box p {
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
@@ -158,51 +166,29 @@ img {
   margin-bottom: 8px;
 }
 
-.hero-content-box p strong {
+.banner-content-box p strong {
   background-image: url(./img/mark.png);
   background-repeat: no-repeat;
   background-position: 0 100%;
   background-size: contain;
 }
 
-.hero-content-box .en {
+.banner-content-box .en {
   font-size: 16px;
   line-height: 24px;
   margin-top: 16px;
   margin-bottom: 0px;
 }
 
-.hero-content-box ul {
+.banner-content-box ul {
   display: flex;
   margin-top: 60px;
   column-gap: 16px;
 }
 
-.hero-content-box ul li img {
+.banner-content-box ul li img {
   display: block;
   width: 56px;
-}
-
-.title-lg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 80px;
-}
-
-.title-lg img {
-  display: block;
-  width: 100px;
-  height: 6px;
-}
-
-.title-lg h2 {
-  font-size: 32px;
-  font-weight: 600;
-  line-height: 38.4px;
-  color: #3b3b3b;
-  letter-spacing: 0.12em;
-  margin: 0 16px;
 }
 
 .works {
@@ -610,4 +596,56 @@ img {
 .footer-link .black a {
   color: #ffffff;
   font-weight: 700;
+}
+
+.title-lg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.title-lg h2 {
+  margin: 0 16px;
+  display: flex;
+  align-items: center;
+
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38.4px;
+  color: #3b3b3b;
+  letter-spacing: 0.12em;
+}
+
+.deco-line {
+  width: 94px;
+  height: 1px;
+  background-color: #c1c1c1;
+  position: relative;
+  margin: 0 16px;
+}
+
+.deco-line::before {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border: 3px solid #c1c1c1;
+  border-radius: 50%;
+  background-color: #c1c1c1;
+  top: -2.5px;
+}
+
+.deco-left::before {
+  left: -6px;
+}
+
+.deco-right::before {
+  right: -6px;
+}
+
+.travel-content-sm,
+.app-content-sm,
+.art-content-sm {
+  display: none;
 }
